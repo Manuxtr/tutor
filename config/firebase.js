@@ -4,12 +4,13 @@ import { getReactNativePersistence, initializeAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDSOZnzZF30McwfhRN89OD4iC___JLOQm8",
-  authDomain: "copreneur-13999.firebaseapp.com",
-  projectId: "copreneur-13999",
-  storageBucket: "copreneur-13999.firebasestorage.app",
-  messagingSenderId: "825629493346",
-  appId: "1:825629493346:web:cc0f7da4565fa42498e93b",
+  apiKey: process.env.EXPO_PUBLIC_API_KEY,
+  authDomain: "tutor-229e4.firebaseapp.com",
+  projectId: "tutor-229e4",
+  storageBucket: "tutor-229e4.firebasestorage.app",
+  messagingSenderId: "355624443578",
+  appId: "1:355624443578:web:cfdc56507e73bd393aac83",
+  measurementId: "G-FC1TG785YQ"
 };
 
 const app = getApps().length === 0 ? initializeApp(firebaseConfig) : getApp();

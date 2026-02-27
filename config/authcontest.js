@@ -9,6 +9,7 @@ import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 import { createContext, useEffect, useState } from "react";
 import { auth, db } from "./firebase";
 
+
 export const AuthContext = createContext({
   isLoggedIn: false,
   isReady: false,
